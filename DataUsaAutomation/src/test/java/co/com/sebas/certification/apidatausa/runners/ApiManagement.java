@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src\\test\\resources\\features\\api_management.feature",
         glue = "co.com.sebas.certification.apidatausa.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
+        publish = true,
         tags = "")
 public class ApiManagement {
 }
