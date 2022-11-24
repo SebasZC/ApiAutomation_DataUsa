@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="I as a user I want to consume the service" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-24T04:35:39" hostname="SEBAS" time="7.38">
+  <properties/>
+  <testcase name="consult year" classname="I as a user I want to consume the service" time="6.963"/>
+  <testcase name="general consult" classname="I as a user I want to consume the service" time="0.417"/>
+  <system-out><![CDATA[[[ID Nation:01000US, Nation:United States, ID Year:2015, Year:2015, Population:316515021, Slug Nation:united-states]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

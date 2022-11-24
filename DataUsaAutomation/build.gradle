@@ -29,4 +29,6 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.4.2'
     // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-rest-assured
     implementation group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '3.4.2'
+
+    implementation 'net.serenity-bdd:serenity-screenplay-rest:2.0.82'
 }
