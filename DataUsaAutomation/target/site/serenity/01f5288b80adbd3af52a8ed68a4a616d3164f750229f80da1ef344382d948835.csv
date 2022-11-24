@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"I as a user I want to consume the service","consult year","SUCCESS","2022-11-24T14:21:10.347167-05:00[America/Bogota]","0.0","8.63"
+"I as a user I want to consume the service","general consult","SUCCESS","2022-11-24T14:21:19.0175181-05:00[America/Bogota]","0.0","0.48"
+"I as a user I want to consume the service","consult by id year","SUCCESS","2022-11-24T14:21:19.5386763-05:00[America/Bogota]","0.0","1.63"
+"I as a user I want to consume the service","consult population","SUCCESS","2022-11-24T14:21:21.1909256-05:00[America/Bogota]","0.0","0.42"
+"I as a user I want to consume the service","can't create register","SUCCESS","2022-11-24T14:21:21.6194681-05:00[America/Bogota]","0.0","1.06"
