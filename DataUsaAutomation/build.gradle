@@ -1,6 +1,15 @@
+buildscript {
+    dependencies {
+        classpath('net.serenity-bdd:serenity-gradle-plugin:2.0.81')
+    }
+}
+
 plugins {
     id 'java'
 }
+
+//plugin for use gradle-aggregator for serenity reports and evidence
+apply plugin: 'net.serenity-bdd.aggregator'
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -10,10 +19,14 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber
+    testImplementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '3.4.2'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.4.2'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.4.2'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-rest-assured
+    implementation group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '3.4.2'
 }
