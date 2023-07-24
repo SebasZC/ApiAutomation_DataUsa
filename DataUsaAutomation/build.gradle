@@ -6,6 +6,7 @@ buildscript {
 
 plugins {
     id 'java'
+    id 'org.sonarqube' version '3.3'
 }
 
 //plugin for use gradle-aggregator for serenity reports and evidence
@@ -40,4 +41,17 @@ dependencies {
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.4'
 
 
+}
+
+sonarqube {
+    properties {
+        // Configura la URL del servidor de SonarQube
+        property 'sonar.host.url', 'http://localhost:9000'
+        
+        // Configura la clave única del proyecto en SonarQube
+        property 'sonar.projectKey', 'de6eb86c3714104ab9336c67eeeb96ce426e6c7e'
+        
+        // Configura otras propiedades según sea necesario
+        // Por ejemplo, sonar.sources, sonar.java.binaries, sonar.tests, etc.
+    }
 }
